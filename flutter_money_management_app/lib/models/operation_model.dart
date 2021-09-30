@@ -6,8 +6,10 @@ class OperationModel {
   OperationModel(this.name, this.selectedIcon, this.unselectedIcon);
 }
 
-List<OperationModel> datas = operationsData.map((item) =>
-    OperationModel(item['name'], item['selectedIcon'], item['unselectedIcon'])).toList();
+List<OperationModel> datas = operationsData
+    .map((item) => OperationModel(
+        item['name'], item['selectedIcon'], item['unselectedIcon']))
+    .toList();
 
 var operationsData = [
   {

@@ -11,17 +11,19 @@ class CardModel {
       this.cardBackground, this.cardElementTop, this.cardElementBottom);
 }
 
-List<CardModel> cards = cardData.map(
-  (item) => CardModel(
-    item['user'],
-    item['cardNumber'],
-    item['cardExpired'],
-    item['cardType'],
-    item['cardBackground'],
-    item['cardElementTop'],
-    item['cardElementBottom'],
-  ),
-).toList();
+List<CardModel> cards = cardData
+    .map(
+      (item) => CardModel(
+        item['user'],
+        item['cardNumber'],
+        item['cardExpired'],
+        item['cardType'],
+        item['cardBackground'],
+        item['cardElementTop'],
+        item['cardElementBottom'],
+      ),
+    )
+    .toList();
 
 var cardData = [
   {
